@@ -2,21 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>我的炫酷网站</title>
+    <!-- 添加内联CSS来设置背景图片和其他样式 -->
+    <style>
+        body {
+            background-image: url("images/background.jpg"); /* 确保路径正确 */
+            background-size: cover; /* 图片覆盖整个背景 */
+            background-position: center; /* 图片居中 */
+            font-family: Arial, sans-serif; /* 设置字体 */
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* 半透明背景使得文字更易读 */
+        }
+        h1 {
+            color: #333;
+        }
+        main {
+            max-width: 960px; /* 设定主要内容区域的最大宽度 */
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white; /* 保持内容区域清晰可读 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+        }
+        img {
+            width: 100%; /* 图片自适应宽度 */
+            max-width: 400px; /* 图片最大宽度限制 */
+            display: block; /* 移除图片下方默认空白 */
+            margin: 20px auto; /* 图片居中显示 */
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <h1>欢迎来到我的网站</h1>
+    <h1>欢迎来到我的炫酷网站</h1>
 </header>
-<main>
-    <p>这是一段网页正文内容。</p >
-    < img src="images/my image.jpg" alt="我的图片">
-</main>
-<footer>
-    <p>版权所有 © 2023 我的公司名</p >
-</footer>
 
+<main>
+    <section>
+        <h2>特色介绍</h2>
+        <p>这里可以介绍您网站的特色功能或服务。</p>
+        <img src="images/my_image.jpg" alt="特色图片展示"> <!-- 修正图片标签的路径和语法 -->
+    </section>
+
+    <section>
+        <h2>最新动态</h2>
+        <p>发布您的最新文章、产品更新或其他信息。</p>
+    </section>
+</main>
+
+<footer>
+    <p>版权所有 © 2023 我的公司名</p>
+</footer>
 
 </body>
 </html>
