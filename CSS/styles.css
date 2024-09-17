@@ -97,3 +97,46 @@ hr {
 p {
     margin: 0 0 10px;
 }
+
+
+
+
+/* 图片展示 */
+
+
+#qrCodeContainer {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* 确保它在其他元素之上 */
+}
+
+/* 当链接聚焦时显示二维码 */
+.qrLinkContainer span:focus + #qrCodeContainer,
+.qrLinkContainer span:hover + #qrCodeContainer {
+    display: block;
+}
+
+/* 链接样式 */
+span {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+    outline: none; /* 移除默认的聚焦边框 */
+}
+
+/* 防止点击其他地方时二维码消失 */
+body {
+    user-select: none; /* 禁止文本选择 */
+}
+
+/* 点击空白区域隐藏二维码 */
+body:active #qrCodeContainer {
+    display: none;
+}
