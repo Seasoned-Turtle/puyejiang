@@ -3,34 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>葡叶酱的温暖小窝</title>
-    <!-- 添加内联CSS来设置背景图片和其他样式 -->
     <style>
+        /* 基本样式 */
         body {
-            background-image: url("images/background.jpeg"); /* 确保路径正确 */
-            background-size: cover; /* 图片覆盖整个背景 */
-            background-position: center; /* 图片居中 */
-            font-family: Arial, sans-serif; /* 设置字体 */
+            background-image: url("images/background.jpeg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
         }
+
+        /* 页眉样式 */
         header {
             text-align: center;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.7); /* 半透明背景使得文字更易读 */
+            background-color: rgba(255, 255, 255, 0.7);
         }
         h1 {
             color: #333;
         }
+
+        /* 主要内容区域样式 */
         main {
-            max-width: 960px; /* 设定主要内容区域的最大宽度 */
+            max-width: 960px;
             margin: 0 auto;
             padding: 20px;
-            background-color: white; /* 保持内容区域清晰可读 */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        /* 图片样式 */
         img {
-            width: 100%; /* 图片自适应宽度 */
-            max-width: 400px; /* 图片最大宽度限制 */
-            display: block; /* 移除图片下方默认空白 */
-            margin: 20px auto; /* 图片居中显示 */
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* 链接样式 */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 脚注样式 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            margin-top: 20px;
+        }
+
+        /* 全局光标样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            cursor: url("path/to/SummerPockets.png"), url("path/to/SummerPockets.cur"), default;
+        }
+
+        /*!* 特定元素覆盖样式 *!*/
+        /*.custom-cursor {*/
+        /*    cursor: default;*/
+        /*}*/
+
+        /* 其他样式 */
+        .cursor-demo span {
+            min-width: 100px;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+            display: inline-block;
+            border: 1px solid grey;
+            border-radius: 3px;
         }
     </style>
 </head>
@@ -44,14 +90,22 @@
     <section>
         <h2>葡叶酱照片展示</h2>
         <p>有没有喜欢上葡叶酱呢？</p>
-        <img src="images/2017-01-25-885266.jpg" alt="葡叶酱照片展示"> <!-- 修正图片标签的路径和语法 -->
+        <img src="images/2017-01-25-885266.jpg" alt="葡叶酱照片展示">
     </section>
 
     <!-- 葡叶酱的B站主页 -->
     <section>
         <h2>B站链接</h2>
-        <a href=" https://b23.tv/jb0OPXA" target="_blank">葡叶酱的B站主页</a>
+        <a href="https://b23.tv/jb0OPXA" target="_blank">葡叶酱的B站主页</a>
     </section>
+
+<!--    &lt;!&ndash; 示例元素 &ndash;&gt;-->
+<!--    <section class="cursor-demo">-->
+<!--        <h2>光标示例</h2>-->
+<!--        <p>将鼠标指针放在方框上以显示光标。</p>-->
+<!--        <span class="custom-cursor">此元素将显示为默认光标。</span>-->
+<!--        <span>此元素将显示为自定义光标。</span>-->
+<!--    </section>-->
 </main>
 
 <footer>
