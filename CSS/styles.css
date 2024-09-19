@@ -71,10 +71,34 @@
 
 /* 页面头部样式 */
 header {
-    text-align: center;   /* 居中对齐 */
+    text-align: center;   /* 居中对齐文本 */
     padding: 20px;        /* 内边距 */
     background-color: rgba(255, 255, 255, 0.7); /* 半透明背景色 */
+    display: flex;        /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center;  /* 垂直居中 */
 }
+
+/* logo 容器样式 */
+.logo {
+    display: flex;        /* 使用 Flexbox 布局 */
+    align-items: center;  /* 垂直居中对齐子元素 */
+    gap: 10px;            /* 子元素之间的间距 */
+}
+
+/* logo 图片样式 */
+.logo img {
+    width: 64px;          /* 图片宽度 */
+    height: 32px;         /* 图片高度，调整以匹配宽度 */
+}
+
+/* logo 文本样式 */
+.logo h1 {
+    margin: 0;            /* 移除默认的外边距 */
+    font-size: 2em;       /* 调整字体大小，大约 32px */
+}
+
+
 
 /* 导航栏样式 */
 nav {
