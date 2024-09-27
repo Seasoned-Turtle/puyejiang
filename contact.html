@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/background-cursor.css">
     <title>葡叶酱的温暖小窝 - 联系我们</title>
     <link rel="icon" type="image/x-icon" href="images/tuanzi/团子 (3).ico">
 
@@ -18,13 +17,38 @@
         </a>
         <h1>欢迎来到葡叶酱的温暖小窝</h1>
     </div>
+    <!-- 添加按钮 -->
+    <button class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav id="navbar">
+        <a href="index.html">首页</a>
+        <a href="pujia.html">葡家介绍</a>
+        <a href="about.html">关于我们</a>
+        <a href="contact.html">联系我们</a>
+    </nav>
+    <!-- 新增一个用于显示导航栏的弹窗 -->
+    <div id="nav-popup" class="nav-popup hidden">
+        <div class="popup-content">
+            <a href="index.html">首页</a>
+            <a href="pujia.html">葡家介绍</a>
+            <a href="about.html">关于我们</a>
+            <a href="contact.html">联系我们</a>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const navPopup = document.getElementById('nav-popup');
+            navPopup.classList.toggle('hidden');
+            navPopup.classList.toggle('show');
+        });
+
+    </script>
+
 </header>
-<nav>
-    <a href="index.html">首页</a>
-    <a href="pujia.html">葡家介绍</a>
-    <a href="about.html">关于我们</a>
-    <a href="contact.html">联系我们</a>
-</nav>
 
 <main>
     <section>
