@@ -43,14 +43,14 @@
 .sidebar li a {
     display: block;       /* 块级元素显示 */
     padding: 10px;        /* 内边距 */
-    color: white;         /* 文字颜色 */
+    color: #D2691E;         /* 文字颜色 */
     text-decoration: none;/* 移除下划线 */
     font-size: 1em;       /* 相对于body的字体大小 */
 }
 
 /* 侧边栏内的链接悬停效果 */
 .sidebar li a:hover {
-    background-color: #555; /* 悬停时背景颜色 */
+    background-color: white; /* 悬停时背景颜色 */
 }
 
 /* 页面头部样式 */
