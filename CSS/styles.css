@@ -3,14 +3,13 @@
     width: 0;            /* 默认宽度为0，隐藏状态 */
     height: 100%;        /* 高度占据整个视窗高度 */
     position: fixed;     /* 固定定位 */
-    top: 0;              /* 距离顶部距离为0 */
+    top: 60px;           /* 距离顶部距离为60px */
     left: 0;             /* 距离左边距离为0 */
     background-color: #FFFFE0; /* 修改背景颜色为浅黄色 */
     transition: 0.3s;    /* 过渡动画时间 */
     overflow-x: hidden;  /* 水平方向不允许滚动 */
     z-index: 1;          /* 层叠顺序 */
 }
-
 
 /* 内容区域样式 */
 .content {
@@ -22,7 +21,7 @@
 /* 切换按钮样式 */
 .toggle-btn {
     position: fixed;     /* 固定定位 */
-    top: 20px;           /* 距离顶部20px */
+    top: 100px;          /* 距离顶部100px */
     left: 0;             /* 距离左边0 */
     background-color: transparent; /* 透明背景 */
     border: none;        /* 无边框 */
@@ -31,6 +30,12 @@
     cursor: pointer;     /* 鼠标指针变为手形 */
     z-index: 2;          /* 层叠顺序 */
     padding: 10px;       /* 内边距 */
+    transition: 0.3s;    /* 过渡动画时间 */
+}
+
+/* 侧边栏展开时的按钮样式 */
+.sidebar-open .toggle-btn {
+    left: 250px;         /* 侧边栏展开时，按钮距离左边250px */
 }
 
 /* 侧边栏内的列表样式 */
@@ -44,7 +49,7 @@
     display: block;       /* 块级元素显示 */
     padding: 10px;        /* 内边距 */
     color: #D2691E;         /* 文字颜色 */
-    text-decoration: none;/* 移除下划线 */
+    text-decoration: none; /* 移除下划线 */
     font-size: 1em;       /* 相对于body的字体大小 */
 }
 
@@ -53,6 +58,7 @@
     background-color: white; /* 悬停时背景颜色 */
 }
 
+
 /* 页面头部样式 */
 header {
     display: flex;          /* 使用弹性布局 */
@@ -60,8 +66,13 @@ header {
     align-items: center;    /* 内容垂直居中对齐 */
     padding: 10px;          /* 内边距为20像素 */
     background-color: #ffba55; /* 背景颜色 */
-    position: relative;     /* 设置相对定位，方便绝对定位元素相对于它定位 */
+    position: fixed;        /* 固定定位 */
+    top: 0;                 /* 距离顶部距离 */
+    width: 100%;            /* 宽度设置为100%，以填充整个视口宽度 */
+    height: 60px;
+    z-index: 1000;          /* 设置较高的z-index值以确保覆盖其他元素 */
 }
+
 
 /* 创建一个内部容器 */
 header .container {
@@ -204,7 +215,7 @@ body {
 main {
     max-width: 960px;         /* 最大宽度 */
     margin: 0 auto;           /* 自动居中 */
-    padding: 20px;            /* 内边距 */
+    padding-top: 80px;            /* 内边距 */
     background-color: transparent;  /* 背景颜色设为透明 */
 }
 
