@@ -13,4 +13,3 @@ function toggleSidebar() {
         toggleBtn.style.left = '250px';
     }
 }
-
