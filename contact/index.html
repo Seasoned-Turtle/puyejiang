@@ -1,74 +1,60 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/styles.css">
-    <title>葡叶酱的温暖小窝 - 联系我们</title>
-    <link rel="icon" type="image/x-icon" href="../images/tuan-zi/团子%20(3).ico">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>葡叶酱的温暖小窝 - 联系我们</title>
+  <link rel="icon" type="image/x-icon" href="../resource/images/tuan-zi/团子%20(3).ico">
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <script src="../js/script.js" defer></script>
 </head>
 <body>
 
-<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Ukenn2112/UkennWeb@3.0/index/web.js"></script>-->
-<!--<script  color="255,182,193" opacity='1' zIndex="-1" count="100" src="https://cdn.bootcss.com/canvas-nest.js/2.0.4/canvas-nest.js" type="text/javascript"></script>-->
-
-
-<header>
-    <div class="logo">
-        <a href="./">
-            <img src="../images/logo.png" alt="葡叶酱的温暖小窝 Logo">
-        </a>
-        <h1>欢迎来到葡叶酱的温暖小窝</h1>
+<!-- Header Section -->
+<header class="header">
+  <div class="container">
+    <div class="logo-container">
+      <img src="../resource/images/logo.png" alt="葡叶酱的温暖小窝 Logo">
+      <span class="web-name">欢迎来到葡叶酱的温暖小窝</span>
     </div>
-    <!-- 添加按钮 -->
-    <button class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-  <nav id="navbar">
-    <a href="https://seasoned-turtle.github.io">憨龟总站</a>
-    <a href="../">首页</a>
-    <a href="../pujia/">葡家介绍</a>
-    <a href="../about/">关于我们</a>
-    <a href="../contact/">联系我们</a>
-  </nav>
-  <!-- 新增一个用于显示导航栏的弹窗 -->
-  <div id="nav-popup" class="nav-popup hidden">
-    <div class="popup-content">
+
+    <!-- Menu Toggle Button -->
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links" id="nav-links">
       <a href="https://seasoned-turtle.github.io">憨龟总站</a>
       <a href="../">首页</a>
       <a href="../pujia/">葡家介绍</a>
       <a href="../about/">关于我们</a>
       <a href="../contact/">联系我们</a>
-    </div>
+    </nav>
   </div>
 
-    <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            const navPopup = document.getElementById('nav-popup');
-            navPopup.classList.toggle('hidden');
-            navPopup.classList.toggle('show');
-        });
-
-    </script>
-
+  <!-- Navigation Toggle Script -->
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      const navPopup = document.getElementById('nav-popup');
+      navPopup.classList.toggle('hidden');
+      navPopup.classList.toggle('show');
+    });
+  </script>
 </header>
 
+<!-- Main Content -->
 <main>
-    <section>
-        <!-- 页面具体内容 -->
-        <h1>联系方式</h1>
-        <p>QQ:1813869568</p>
-        <p>QQ群：655026004</p>
-        <p>Email: lim301139@qq.com</p>
-        <p>电话: +86 暂时不想透露 </p>
-    </section>
+  <section>
+    <h1>联系方式</h1>
+    <p>QQ: 1813869568</p>
+    <p>QQ群：655026004</p>
+    <p>Email: lim301139@qq.com</p>
+    <p>电话: +86 暂时不想透露</p>
+  </section>
 </main>
 
+<!-- Footer Section -->
 <footer>
-    <p>版权所有 © 2024 葡家有限公司</p>
+  <p>版权所有 © 2024 葡家有限公司</p>
 </footer>
 
 </body>
